@@ -1,0 +1,19 @@
+body{
+    background-color: antiquewhite;
+}
+main{
+    text-align: center;
+    font-size: 20px;
+}
+.formulario-label{
+    grid-column: 2;
+}
+.mensaje-error{
+    background-color: red;
+    font-size: 15px;
+    display: none;
+    color: aliceblue;
+}
+.mensaje-error-activo{
+    display: block;
+}

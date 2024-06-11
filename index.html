@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="asset/js/script.js"></script>
+    <script src="asset/js/promesa.js"></script>
+    <link rel="stylesheet" href="asset/css/estilo.css">
+    <title>Un registro para nada tumultoso</title>
+</head>
+<body>
+    <main class="formulario" id="formula">
+        <h1 id="h1" class="formulario">Formulario para entregar tu alma al dios del miedo y el hambre.</h1>
+        <form action="" class="formulario-form"></form>
+        <button id="tamano">Tamaño</button>
+        <button id="contraste">Contraste</button>
+            <div class="formulario-div">
+                <label class="formulario-label">Usuario</label>
+                <input type="text" class="formulario-input" id="usuario">
+                <p class="mensaje-error">Rellene el cuadro sin tildes y de 4 a 16 caracteres.</p>
+            </div>
+            <div class="formulario-div">
+                <label class="formulario-label">Nombre</label>
+                <input type="text" class="formulario-input" id="nombre">
+                <p class="mensaje-error">Rellene el cuadro sin numeros ni signos y de 4 a 20 caracteres.</p>
+            </div>
+            <div class="formulario-div">
+                <label class="formulario-label">Edad</label>
+                <input type="text" class="formulario-input" id="edad">
+                <p class="mensaje-error">Rellene solo con numeros y de 1 a 3 caracteres.</p>
+            </div>
+            <div class="formulario-div">
+                <label class="formulario-label">Correo</label>
+                <input type="text" class="formulario-input" id="correo">
+                <p class="mensaje-error">Rellene con un correo valido.</p>
+            </div>
+            <div class="formulario-div">
+                <label class="formulario-label">Telefono</label>
+                <input type="text" class="formulario-input" id="telefono">
+                <p class="mensaje-error">Rellene solo con numeros y de 8 a 12 caracteres.</p>
+            </div>
+            <div class="formulario-div">
+                <label class="formulario-label">Selecciona un tributo para el dios del miedo y el hambre.</label>
+                <select class="formulario-select" id="opcion">
+                    <option value="1">Comida</option>
+                    <option value="2">Una pierna</option>
+                    <option value="3">Un alma humana</option>
+                    <option value="4">Señor perdoneme :c</option>
+                    <option value="5">Yo mismo</option>
+                </select>
+            </div>
+            <div class="formulario-div">
+                <label class="formulario-label">Deja tu  ultima voluntad, quizas alguien lo lea (no lo haran)</label>
+                <textarea name="area" id="area" cols="30" rows="10"></textarea>
+                <p class="mensaje-error">Rellene con lo que sea de 5 a 50 caracteres.</p>
+            </div>
+            <div class="formulario-div">
+                <input type="checkbox" class="formulario-input-check">
+                <label class="formulario-label" id="acepto">Acepto todos los terminos y condiciones dandole mi alma al dios del miedo y el hambre</label>
+            </div>
+            <div class="formulario-boton">
+                <button id="enviar">Enviar</button>
+            </div>
+    </main>
+</body>
+</html>
