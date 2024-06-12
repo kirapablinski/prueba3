@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./asset/js/script.js"></script>
+    <script type="module" src="./asset/js/script.js"></script>
     <script type="module" src="./asset/js/promesa.js"></script>
     <link rel="stylesheet" href="asset/css/estilo.css">
     <title>Un registro para nada tumultoso</title>
@@ -11,8 +11,8 @@
 <body>
     <main>
         <h1 id="ha1" class="formulario">Formulario para entregar tu alma al dios del miedo y el hambre.</h1>
-        <button onclick="aumentar()" id="tamano">Tamaño</button>
-        <button onclick="cambiarContraste()" id="contraste">Contraste</button>
+        <button id="Aumentarbtn">Tamaño</button>
+        <button id="Contrastebtn">Contraste</button>
         <form action="" class="formulario" id="formulario"></form>
             <div class="formulario-div" id="grupo-usuario">
                 <label for="usuario" class="formulario-label">Usuario (Se te recordara con este nombre)</label>
@@ -70,13 +70,13 @@
             </div>
             <div class="formulario-div" id="grupo-check">
                 <label class="formulario-label">
-                    <input type="checkbox" class="formulario-input-check" name="terminos" id="terminos">
+                    <input type="checkbox" class="formulario-input-check" value="1" name="terminos" id="acepto">
                     Acepto todos los terminos y condiciones dandole mi alma al dios del miedo y el hambre
                 </label>
 
             </div>
             <div class="formulario-boton formulario-boton-enviar">
-                <button type="submit" class="formulario-btn">Enviar</button>
+                <button type="submit" class="formulario-btn" id="btnRegistrar">Enviar</button>
             </div>
     </main>
 </body>

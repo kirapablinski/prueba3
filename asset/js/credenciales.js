@@ -1,8 +1,8 @@
- export const firebaseConfig = {
-    apiKey: "AIzaSyC2jlgrGUbFIsqwuFDu4q3eLXSHo7UQyYM",
-    authDomain: "mi-proyecto-we.firebaseapp.com",
-    projectId: "mi-proyecto-we",
-    storageBucket: "mi-proyecto-we.appspot.com",
-    messagingSenderId: "497759599118",
-    appId: "1:497759599118:web:423f022285b1ab7cb61a5f"
+export const firebaseConfig = {
+    apiKey: "AIzaSyBZeUJdMxzlehBahJkqDLnl10-SB1MLHQg",
+    authDomain: "prueba-b12d0.firebaseapp.com",
+    projectId: "prueba-b12d0",
+    storageBucket: "prueba-b12d0.appspot.com",
+    messagingSenderId: "335936499171",
+    appId: "1:335936499171:web:4a8f8c426c66a03d4b44d6"
   };
