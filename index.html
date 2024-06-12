@@ -3,63 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="asset/js/script.js"></script>
-    <script src="asset/js/promesa.js"></script>
+    <script src="./asset/js/script.js"></script>
+    <script type="module" src="./asset/js/promesa.js"></script>
     <link rel="stylesheet" href="asset/css/estilo.css">
     <title>Un registro para nada tumultoso</title>
 </head>
 <body>
-    <main class="formulario" id="formula">
-        <h1 id="h1" class="formulario">Formulario para entregar tu alma al dios del miedo y el hambre.</h1>
-        <form action="" class="formulario-form"></form>
-        <button id="tamano">Tamaño</button>
-        <button id="contraste">Contraste</button>
-            <div class="formulario-div">
-                <label class="formulario-label">Usuario</label>
-                <input type="text" class="formulario-input" id="usuario">
+    <main>
+        <h1 id="ha1" class="formulario">Formulario para entregar tu alma al dios del miedo y el hambre.</h1>
+        <button onclick="aumentar()" id="tamano">Tamaño</button>
+        <button onclick="cambiarContraste()" id="contraste">Contraste</button>
+        <form action="" class="formulario" id="formulario"></form>
+            <div class="formulario-div" id="grupo-usuario">
+                <label for="usuario" class="formulario-label">Usuario (Se te recordara con este nombre)</label>
+                <div class="formulario-div-usuario">
+                    <input type="text" class="formulario-input" id="usuario" name="usuario">
+                </div>
                 <p class="mensaje-error">Rellene el cuadro sin tildes y de 4 a 16 caracteres.</p>
             </div>
-            <div class="formulario-div">
+            <div class="formulario-div" id="grupo-nombre">
                 <label class="formulario-label">Nombre</label>
-                <input type="text" class="formulario-input" id="nombre">
+                <div class="formulario-div-nombre">
+                    <input type="text" class="formulario-input" id="nombre" name="nombre">
+                </div>
                 <p class="mensaje-error">Rellene el cuadro sin numeros ni signos y de 4 a 20 caracteres.</p>
             </div>
-            <div class="formulario-div">
+            <div class="formulario-div" id="grupo-edad">
                 <label class="formulario-label">Edad</label>
-                <input type="text" class="formulario-input" id="edad">
+                <div class="formulario-div-edad">
+                    <input type="text" class="formulario-input" id="edad" name="edad">
+                </div>
                 <p class="mensaje-error">Rellene solo con numeros y de 1 a 3 caracteres.</p>
             </div>
-            <div class="formulario-div">
+            <div class="formulario-div" id="grupo-correo">
                 <label class="formulario-label">Correo</label>
-                <input type="text" class="formulario-input" id="correo">
+                <div class="formulario-div-correo">
+                    <input type="email" class="formulario-input" id="correo" name="correo">
+                </div>
                 <p class="mensaje-error">Rellene con un correo valido.</p>
             </div>
-            <div class="formulario-div">
+            <div class="formulario-div" id="grupo-telefono">
                 <label class="formulario-label">Telefono</label>
-                <input type="text" class="formulario-input" id="telefono">
+                <div class="formulario-div-telefono">
+                    <input type="text" class="formulario-input" id="telefono" name="telefono">
+                </div>
                 <p class="mensaje-error">Rellene solo con numeros y de 8 a 12 caracteres.</p>
             </div>
-            <div class="formulario-div">
+            <div class="formulario-div" id="grupo-select">
                 <label class="formulario-label">Selecciona un tributo para el dios del miedo y el hambre.</label>
-                <select class="formulario-select" id="opcion">
-                    <option value="1">Comida</option>
-                    <option value="2">Una pierna</option>
-                    <option value="3">Un alma humana</option>
-                    <option value="4">Señor perdoneme :c</option>
-                    <option value="5">Yo mismo</option>
-                </select>
+                <div class="formulario-div-select">
+                    <select class="formulario-input" id="opcion">
+                        <option value="1">Comida</option>
+                        <option value="2">Una pierna</option>
+                        <option value="3">Un alma humana</option>
+                        <option value="4">Señor perdoneme :c</option>
+                        <option value="5">Yo mismo</option>
+                    </select>
+                </div>
             </div>
-            <div class="formulario-div">
+            <div class="formulario-div" id="grupo-text">
                 <label class="formulario-label">Deja tu  ultima voluntad, quizas alguien lo lea (no lo haran)</label>
-                <textarea name="area" id="area" cols="30" rows="10"></textarea>
+                <div class="formulario-div-text">
+                    <textarea name="area" id="area" cols="70" rows="60" class="formulario-input"></textarea>
+                </div>
                 <p class="mensaje-error">Rellene con lo que sea de 5 a 50 caracteres.</p>
             </div>
-            <div class="formulario-div">
-                <input type="checkbox" class="formulario-input-check">
-                <label class="formulario-label" id="acepto">Acepto todos los terminos y condiciones dandole mi alma al dios del miedo y el hambre</label>
+            <div class="formulario-div" id="grupo-check">
+                <label class="formulario-label">
+                    <input type="checkbox" class="formulario-input-check" name="terminos" id="terminos">
+                    Acepto todos los terminos y condiciones dandole mi alma al dios del miedo y el hambre
+                </label>
+
             </div>
-            <div class="formulario-boton">
-                <button id="enviar">Enviar</button>
+            <div class="formulario-boton formulario-boton-enviar">
+                <button type="submit" class="formulario-btn">Enviar</button>
             </div>
     </main>
 </body>
