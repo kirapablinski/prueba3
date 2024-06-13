@@ -5,13 +5,10 @@ export const registrarPersona = async(persona)=>{
 }
 
 export const obtenerPersonas = async()=>{
-    //recuperar la referencia (ruta)
-    const ref = collection(db, "personas");
-    //recuperamos una captura de la bd
+    const ref = collection(db, "persona");
     const qSnap = await getDocs(ref);
     let listado = []
     qSnap.forEach((doc) => {
-        //console.log(doc.id);
         console.log(doc.data());
         listado.push({...doc.data(),id:doc.id})
     });
@@ -20,10 +17,11 @@ export const obtenerPersonas = async()=>{
 }
 
 export const actualizarPersona = async(objeto,id)=>{
-    const ref = doc(db,"personas",id);
+    const ref = doc(db,"persona",id);
     await updateDoc(ref,objeto)
 }
 export const eliminarPersona = async(id)=>{
-    const ref = doc(db,"personas",id)
+    const ref = doc(db,"persona",id)
     await deleteDoc(ref);
 }
+//no hay mucho que decir aca, sabe de donde lo sacamos todos

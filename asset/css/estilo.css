@@ -5,7 +5,7 @@ body{/*color de fondo y tamaño de letra */
     background-color: antiquewhite;
     font-size: 20px;
 }
-main{/*para hacer que el main abarque cierto rango de la pantalla*/
+main, table{/*para hacer que el main abarque cierto rango de la pantalla*/
     max-width: 800px;
     width: 90%;
     margin: auto;
@@ -57,4 +57,36 @@ main{/*para hacer que el main abarque cierto rango de la pantalla*/
 	border-radius: 3px;
 	cursor: pointer;
 	transition: .1s ease all;
+}
+th{
+	margin-right: 100px;
+}
+.formulario-mensaje-exito{
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+.formulario-mensaje-exito-activo{
+	display: block;
+}
+/* para validar*/
+.formulario__grupo-correcto .mensaje-error{
+	color: #1ed12d;
+	opacity: 1;
+}
+.formulario__grupo-correcto .formulario-label{
+	color: #1ed12d;
+}
+.formulario__grupo-correcto .formulario-input{
+	border: 3px solid #1ed12d;;
+}
+.formulario__grupo-incorrecto .formulario-label{
+	color: #bb2929;
+}
+.formulario__grupo-incorrecto .mensaje-error{
+	color: #bb2929;
+	opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario-input{
+	border: 3px solid #bb2929;
 }
